@@ -11,5 +11,7 @@ export default defineConfig({
   },
   datasource: {
     url: process.env["DATABASE_URL"],
+    // @ts-ignore - directUrl is required by Prisma 7 but might not be in the current type definitions
+    directUrl: process.env["DIRECT_URL"],
   },
 });

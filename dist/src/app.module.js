@@ -8,16 +8,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.AppModule = void 0;
 const common_1 = require("@nestjs/common");
-const app_controller_1 = require("./app.controller");
-const app_service_1 = require("./app.service");
-const database_module_1 = require("./database/database.module");
-const auth_module_1 = require("./auth/auth.module");
-const users_module_1 = require("./users/users.module");
-const admin_module_1 = require("./admin/admin.module");
-const categories_module_1 = require("./categories/categories.module");
-const plants_module_1 = require("./plants/plants.module");
-const plant_variants_module_1 = require("./plant-variants/plant-variants.module");
-const upload_module_1 = require("./upload/upload.module");
+const app_controller_1 = require("./controllers/app.controller");
+const app_service_1 = require("./services/app.service");
+const database_module_1 = require("./modules/database.module");
+const auth_module_1 = require("./modules/auth.module");
+const users_module_1 = require("./modules/users.module");
+const admin_module_1 = require("./modules/admin.module");
+const categories_module_1 = require("./modules/categories.module");
+const plants_module_1 = require("./modules/plants.module");
+const plant_variants_module_1 = require("./modules/plant-variants.module");
+const upload_module_1 = require("./modules/upload.module");
 let AppModule = class AppModule {
 };
 exports.AppModule = AppModule;

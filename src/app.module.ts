@@ -1,14 +1,14 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
-import { DatabaseModule } from './database/database.module';
-import { AuthModule } from './auth/auth.module';
-import { UsersModule } from './users/users.module';
-import { AdminModule } from './admin/admin.module';
-import { CategoriesModule } from './categories/categories.module';
-import { PlantsModule } from './plants/plants.module';
-import { PlantVariantsModule } from './plant-variants/plant-variants.module';
-import { UploadModule } from './upload/upload.module';
+import { AppController } from './controllers/app.controller';
+import { AppService } from './services/app.service';
+import { DatabaseModule } from './modules/database.module';
+import { AuthModule } from './modules/auth.module';
+import { UsersModule } from './modules/users.module';
+import { AdminModule } from './modules/admin.module';
+import { CategoriesModule } from './modules/categories.module';
+import { PlantsModule } from './modules/plants.module';
+import { PlantVariantsModule } from './modules/plant-variants.module';
+import { UploadModule } from './modules/upload.module';
 
 @Module({
   imports: [DatabaseModule, AuthModule, UsersModule, AdminModule, CategoriesModule, PlantsModule, PlantVariantsModule, UploadModule],
